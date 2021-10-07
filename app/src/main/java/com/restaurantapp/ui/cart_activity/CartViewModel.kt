@@ -22,19 +22,19 @@ class CartViewModel(application: Application) : AndroidViewModel(application) {
         return _cartItemList
     }
 
-    suspend fun getItemId(id: Int): CartItem {
+    fun getItemId(id: Int): CartItem {
         return _cartItemsDAO.getItemId(id)
     }
 
-    suspend fun updateItem(cartItem: CartItem) {
+    fun updateItem(cartItem: CartItem) {
         _cartItemsDAO.updateItem(cartItem)
     }
 
-    suspend fun removeItem(cartItem: CartItem) {
+    fun removeItem(cartItem: CartItem) {
         _cartItemsDAO.delete(cartItem)
     }
 
-    suspend fun onItemAdded(cartItem: CartItem) {
+    fun onItemAdded(cartItem: CartItem) {
         _cartItemsDAO.insertItem(cartItem)
     }
 
