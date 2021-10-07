@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.restaurantapp.R
 import com.restaurantapp.data.CartItem
 import com.restaurantapp.ui.BaseActivity
+import com.restaurantapp.utils.Constants
 import com.restaurantapp.utils.setLanguage
 import com.restaurantapp.utils.setUpToolbar
 import kotlinx.android.synthetic.main.activity_cart.*
@@ -23,7 +24,7 @@ class CartActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _sharedPreferences = getSharedPreferences(
-            "restaurant_app", Context.MODE_PRIVATE
+            Constants.PREF_NAME, Context.MODE_PRIVATE
         )
         setLanguage(_sharedPreferences)
         setContentView(R.layout.activity_cart)

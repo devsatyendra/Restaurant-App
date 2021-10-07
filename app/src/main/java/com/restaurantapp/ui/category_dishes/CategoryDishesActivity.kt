@@ -31,7 +31,7 @@ class CategoryDishesActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _sharedPreferences = getSharedPreferences(
-            "restaurant_app", Context.MODE_PRIVATE
+            Constants.PREF_NAME, Context.MODE_PRIVATE
         )
         setLanguage(_sharedPreferences)
         setContentView(R.layout.activity_category_dishes)

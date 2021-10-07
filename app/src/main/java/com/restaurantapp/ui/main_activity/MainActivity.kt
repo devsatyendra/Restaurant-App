@@ -42,7 +42,7 @@ class MainActivity : BaseActivity(), AdapterView.OnItemSelectedListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         _sharedPreferences = getSharedPreferences(
-            "restaurant_app", Context.MODE_PRIVATE
+            Constants.PREF_NAME, Context.MODE_PRIVATE
         )
         setLanguage(_sharedPreferences)
         setContentView(R.layout.activity_main)
@@ -149,7 +149,7 @@ class MainActivity : BaseActivity(), AdapterView.OnItemSelectedListener {
     }
 
     private fun setUpLanguageSelector() {
-        var aa = ArrayAdapter(this, android.R.layout.simple_spinner_item, _languages)
+        val aa = ArrayAdapter(this, android.R.layout.simple_spinner_item, _languages)
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
 
         with(mylanguage)
