@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Restaurant App</string>
+
+    <string name="hintSearch">व्यंजन खोजें</string>
+    <string name="items">व्यंजन</string>
+    <string name="payment_details">भुगतान विवरण</string>
+    <string name="subtotal">उप-योग</string>
+    <string name="cgst">CGST</string>
+    <string name="sgst">SGST</string>
+    <string name="total">कुल</string>
+    <string name="place_order">आदेश देना</string>
+    <string name="view_cart">शॉपिंग कार्ट देखें</string>
+    <string name="browse">खोज</string>
+    <string name="famous_dishes">प्रसिद्ध व्यंजन</string>
+</resources>
